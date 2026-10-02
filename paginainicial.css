@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .lacquer-regular {
     font-family: "Lacquer", system-ui;
     font-weight: 400;
@@ -17,7 +18,9 @@
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #2b3c54;
+    opacity: 0.9;
+    width: 100%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -25,6 +28,8 @@
 }
 
 .header-content {
+    background-color: #2b3c54;
+    opacity: 0.9;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -49,15 +54,20 @@
 
 
 .header-user {
+    background-color: #2b3c54;
+    opacity: 0.9;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .header-user a {
+    display: flex;
+    align-items: center;
     font-family: 'Bruno Ace', sans-serif;
     text-decoration: none;
     color: white;
+    gap: 5px;
 }
 
 .header-user p {
@@ -70,7 +80,8 @@
 }
 
 .menu-lateral {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #2b3c54;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -84,6 +95,8 @@
 }
 
 .utilitarios {
+    background-color: #2b3c54;
+    opacity: 0.9;
     border-radius: 10px;
     width: 250px;
     padding: 20px;
@@ -108,7 +121,7 @@
     width: 250px;
     margin-bottom: 5px;
     padding: 10px;
-    border: 1px solid #2b3c54;
+    border: 1px solid #ffffff;
 }
 
 .listagens {
@@ -138,7 +151,7 @@
     margin-bottom: 5px;
     width: 250px;
     padding: 10px;
-    border: 1px solid #2b3c54;
+    border: 1px solid #ffffff;
 }
 
 .others {
@@ -172,11 +185,20 @@
     margin-bottom: 5px;
     width: 250px;
     padding: 10px;
-    border: 1px solid #2b3c54;
+    border: 1px solid #ffffff;
 }
 
 i {
     margin-right: 5px;
+}
+
+.main {
+    height: 93.2vh;
+    background-image: url('Assets/Bg Oficina.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Bruno Ace", sans-serif;
+    color: white;
 }
 
 .conteudo-principal {
@@ -187,7 +209,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #2b3c54;
     width: 100vh;
     height: 50vh;
     padding: 20px;
@@ -198,7 +220,7 @@ i {
     margin-bottom: 20px;
 }
 
-.card-agendamentos  {
+.card-agendamentos {
     display: flex;
     align-items: center;
     align-content: center;
@@ -207,10 +229,10 @@ i {
     width: 100%;
     height: 100%;
     padding: 20px;
-    border-radius: 10px;    
+    border-radius: 10px;
     gap: 10px;
     font-family: 'Bruno Ace', sans-serif;
-    color: black;
+    color: white;
     flex-wrap: wrap;
 }
 
@@ -222,7 +244,11 @@ i {
     justify-content: space-between;
     width: 150px;
     height: 150px;
-     background-color:aliceblue;
+    background-color: #000000;
+    opacity: 0.9;
+    border-radius: 10px;
+    opacity: 100%;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
