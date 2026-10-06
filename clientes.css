@@ -201,6 +201,7 @@ i {
     color: white;
 }
 
+
 .conteudo-principal {
     position: absolute;
     top: 50%;
@@ -220,35 +221,51 @@ i {
     margin-bottom: 20px;
 }
 
-.card-agendamentos {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: #2b3c54;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    gap: 10px;
-    font-family: 'Bruno Ace', sans-serif;
-    color: white;
-    flex-wrap: wrap;
-}
-
-.cards {
+.cadastro-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
+    width: 100px;
+}
+
+.cadastro-form label {
+    font-family: 'Bruno Ace', sans-serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.cadastro-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+.cadastro-form-button {
+    display: inline-block;
+    background-color: #2b3c54;
+    background-color: #D3AF37;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
     width: 150px;
-    height: 150px;
-    background-color: #000000;
-    opacity: 0.9;
-    border-radius: 10px;
-    opacity: 100%;
     padding: 20px;
-    gap: 20px;
+    gap: 5px;
 }

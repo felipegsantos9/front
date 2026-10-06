@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo's Motors | Listar Clientes</title>
+    <link rel="stylesheet" href="listagem.css">
+    <link rel="icon" href="Assets/Ricardo's Motors.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lacquer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="header-content">
+            <h1>Ricardo's Motors | Listar Clientes</h1>
+            <img src="Assets/Ricardo's Motors.png" alt="Logo da Ricardo's Motors" class="logo">
+        </section>
+
+
+        <section class="header-user">
+            <a href="./usuario.html">
+                <p id="nome-usuario">Usuário</p>
+                <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
+            </a>
+
+        </section>
+        <section class="menu-lateral">
+            <nav>
+                <ul>
+                    <section class="utilitarios">
+                        <ul>
+                            <li><a href="./paginainicial.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
+                            <li><a href="./cliente.html"><i class="fa-solid fa-user"></i>Cadastro Clientes</a></li>
+                            <li><a href="./veiculo.html"><i class="fa-solid fa-car"></i>Cadastro Veículos</a></li>
+                            <li><a href="./agendamento.html"><i class="fa-solid fa-calendar"></i>Agendamentos</a></li>
+                        </ul>
+                    </section>
+                    <section class="listagens">
+                        <ul>
+                            <li><a href="./listagem-clientes.html"><i class="fa-solid fa-users"></i>Listar clientes</a>
+                            </li>
+                            <li><a href="./listagem-agendamentos.html"><i class="fa-solid fa-calendar-days"></i>Listar
+                                    agendamentos</a></li>
+                        </ul>
+                    </section>
+                    <section class="others">
+                        <ul>
+                            <li><a href="./configuracao.html"><i class="fa-solid fa-gear"
+                                        style="color: rgb(255, 255, 255);"></i>Configurações</a></li>
+                            <li><a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket"
+                                        style="color: #fff;"></i>Sair</a></li>
+                        </ul>
+                    </section>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <dialog id="fotoModal" class="fotoModal" id="corpo-modal">
+        <img id="Imagem-Veiculo" class="veiculo-imagem" src="" alt="Veículo">
+        <button onclick="fecharModal()">Fechar Imagem</button>
+    </dialog>
+
+    <main class="main">
+        <div class="conteudo-principal">
+            <h2>Listagem de Clientes</h2>
+            <table border="1" class="tabela-clientes">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Placa</th>
+                        <th>Imagem</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="Nome-Cliente">Suki</td>
+                        <td id="Email-Cliente">suki@example.com</td>
+                        <td id="Telefone-Cliente">(11) 1234-5678</td>
+                        <td id="Marca">Honda</td>
+                        <td id="Modelo">S2000</td>
+                        <td id="Placa">ABC-1234</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://i.pinimg.com/1200x/98/4f/a2/984fa26e3446daf56bdd774b91d57df8.jpg', 'Honda S2000 da Suki')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Nome-Cliente">Roman Pearce</td>
+                        <td id="Email-Cliente">roman.pearce@example.com</td>
+                        <td id="Telefone-Cliente">(21) 9876-5432</td>
+                        <td id="Marca">Ford</td>
+                        <td id="Modelo">Focus</td>
+                        <td id="Placa">XYZ-5678</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://i.pinimg.com/1200x/2b/e9/56/2be95620fb4e047741dc0e288bbc0ab9.jpg', 'Ford Focus do Roman')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Nome-Cliente">Brian O'Connor</td>
+                        <td id="Email-Cliente">brian.oconnor@example.com</td>
+                        <td id="Telefone-Cliente">(31) 9123-4567</td>
+                        <td id="Marca">Nissan</td>
+                        <td id="Modelo">Skyline</td>
+                        <td id="Placa">LMN-9012</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://i.pinimg.com/736x/f9/62/cd/f962cdce567d6d4e89817de56ee447d1.jpg', 'Nissan Skyline do Brian')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Nome-Cliente">Dominic Toretto</td>
+                        <td id="Email-Cliente">dominic.toretto@example.com</td>
+                        <td id="Telefone-Cliente">(41) 9987-6543</td>
+                        <td id="Marca">Dodge</td>
+                        <td id="Modelo">Charger</td>
+                        <td id="Placa">OPQ-3456</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://i.pinimg.com/736x/9d/89/b8/9d89b8a1d9a85d1ed8dbfa35e2103485.jpg', 'Dodge Charger do Toretto')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i> 
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Nome-Cliente">Bruna Muniz</td>
+                        <td id="Email-Cliente">bruna.muniz@example.com</td>
+                        <td id="Telefone-Cliente">(51) 9876-5432</td>
+                        <td id="Marca">BMW</td>
+                        <td id="Modelo">X3</td>
+                        <td id="Placa">RST-7890</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://i.pinimg.com/1200x/33/07/dc/3307dca4ba0526a1b3160f7f60437e6a.jpg', 'BMW X3 da Bruna')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Nome-Cliente">Mario Cleber</td>
+                        <td id="Email-Cliente">mario.cleber@example.com</td>
+                        <td id="Telefone-Cliente">(61) 9876-5432</td>
+                        <td id="Marca">Ford</td>
+                        <td id="Modelo">Escort</td>
+                        <td id="Placa">UVW-1234</td>
+                        <td>
+                            <button
+                                onclick="abrirModal('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeRub4hSXAdcloGceIwzSRhjbVcRJxXqAuocFh5Prte6LavbT3sBTdu0&s=10', 'Ford Escort do Mario')">Abrir
+                                Imagem</button>
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="listar.js"></script>
+
+</html>
