@@ -19,17 +19,15 @@
 <body>
 
     <header class="header">
-            <section class="header-content">
-                <h1>Ricardo's Motors | Fazer Agendamento</h1>
-                <img src="Assets/Ricardo's Motors.png" alt="Logo da Ricardo's Motors" class="logo">
-            </section>
+        <section class="header-content">
+            <h1>Ricardo's Motors | Fazer Agendamento</h1>
+            <img src="Assets/Ricardo's Motors.png" alt="Logo da Ricardo's Motors" class="logo">
+        </section>
 
 
         <section class="header-user">
-            <a href="./usuario.html">
-                <p id="nome-usuario">Usuário</p>
+                <p id="Data-usuario">Usuário</p>
                 <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
-            </a>
 
         </section>
         <section class="menu-lateral">
@@ -53,8 +51,6 @@
                     </section>
                     <section class="others">
                         <ul>
-                            <li><a href="./configuracao.html"><i class="fa-solid fa-gear"
-                                        style="color: rgb(255, 255, 255);"></i>Configurações</a></li>
                             <li><a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket"
                                         style="color: #fff;"></i>Sair</a></li>
                         </ul>
@@ -65,7 +61,36 @@
     </header>
 
     <main class="main">
-        </main>
+        <div class="conteudo-principal">
+            <h2>Fazer Agendamento</h2>
+            <br>
+
+            <form id="cadastro-form">
+                <div class="card">
+                    <label for="Data">Data:</label>
+                    <input type="datetime" id="Data" name="Data" required>
+                </div>
+
+                <div class="card">
+                    <label for="Cliente-Id">Cliente Id:</label>
+                    <input type="text" id="Cliente-Id" name="Cliente-Id" required>
+                </div>
+
+                <div class="card">
+                    <label for="Carro-Id">Carro Id:</label>
+                    <input type="text" id="Carro-Id" name="Carro-Id" required>
+                </div>
+
+                <div class="card">
+                    <label for="Usuario-Id">Usuario Id</label>
+                    <input type="text" id="Usuario-Id" name="Usuario-Id" required>
+                </div>
+
+                <button class="cadastro-form-button" type="submit">Cadastrar</button>
+
+        </div>
+    </main>
 
 </body>
+
 </html>

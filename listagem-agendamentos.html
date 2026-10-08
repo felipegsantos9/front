@@ -19,17 +19,15 @@
 <body>
 
     <header class="header">
-            <section class="header-content">
-                <h1>Ricardo's Motors | Listar Agendamentos</h1>
-                <img src="Assets/Ricardo's Motors.png" alt="Logo da Ricardo's Motors" class="logo">
-            </section>
+        <section class="header-content">
+            <h1>Ricardo's Motors | Listar Agendamentos</h1>
+            <img src="Assets/Ricardo's Motors.png" alt="Logo da Ricardo's Motors" class="logo">
+        </section>
 
 
         <section class="header-user">
-            <a href="./usuario.html">
-                <p id="nome-usuario">Usuário</p>
-                <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
-            </a>
+            <p id="Data-usuario">Usuário</p>
+            <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
 
         </section>
         <section class="menu-lateral">
@@ -47,14 +45,12 @@
                         <ul>
                             <li><a href="./listagem-clientes.html"><i class="fa-solid fa-users"></i>Listar clientes</a>
                             </li>
-                            <li><a href="./listagem-agendamentos.html"><i class="fa-solid fa-calendar-days"></i>Listar
-                                    agendamentos</a></li>
+                            <li><a href="./listagem-agendamentos.html"><i class="fa-solid fa-calendar-days"><i>Listar
+                                            agendamentos</a></li>
                         </ul>
                     </section>
                     <section class="others">
                         <ul>
-                            <li><a href="./configuracao.html"><i class="fa-solid fa-gear"
-                                        style="color: rgb(255, 255, 255);"></i>Configurações</a></li>
                             <li><a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket"
                                         style="color: #fff;"></i>Sair</a></li>
                         </ul>
@@ -63,7 +59,86 @@
             </nav>
         </section>
     </header>
-    <main class="main"></main>
+
+    <main class="main">
+        <div class="conteudo-principal">
+            <h2>Listagem de Clientes</h2>
+            <table border="1" class="tabela-clientes">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Cliente-Id</th>
+                        <th>Carro-Id</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="Data">09/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">1</td>
+                        <td id="Carro-Id">1</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Data">10/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">6</td>
+                        <td id="Carro-Id">6</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Data">13/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">5</td>
+                        <td id="Carro-Id">5</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Data">14/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">2</td>
+                        <td id="Carro-Id">2</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Data">16/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">3</td>
+                        <td id="Carro-Id">3</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Data">17/10/2026</td>
+                        <td id="hora">10h30</td>
+                        <td id="Cliente-Id">4</td>
+                        <td id="Carro-Id">4</td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can" style="color: rgb(255, 255, 255);"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 
 </body>
+
 </html>
