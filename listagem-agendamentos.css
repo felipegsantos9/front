@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.lacquer-regular {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bruno-ace-regular {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: #2b3c54;
+    opacity: 0.9;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    background-color: #2b3c54;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-content h1 {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-content a {
+    font-family: 'Bruno Ace', sans-serif;
+    text-decoration: none;
+    color: transparent;
+}
+
+.header-content a:hover {
+    color: #D3AF37;
+}
+
+
+.header-user {
+    background-color: #2b3c54;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-user a {
+    display: flex;
+    align-items: center;
+    font-family: 'Bruno Ace', sans-serif;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+}
+
+.header-user p {
+    font-family: 'Bruno Ace', sans-serif;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+.menu-lateral {
+    background-color: #2b3c54;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+}
+
+.utilitarios {
+    background-color: #2b3c54;
+    opacity: 0.9;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.utilitarios a {
+    font-family: 'Bruno Ace', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.utilitarios a:hover {
+    color: #D3AF37;
+}
+
+.utilitarios ul {
+    list-style: none;
+}
+
+.utilitarios li {
+    width: 250px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+.listagens {
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.listagens a {
+    font-family: 'Bruno Ace', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.listagens a:hover {
+    color: #D3AF37;
+}
+
+.listagens ul {
+    list-style: none;
+}
+
+.listagens li {
+    margin-bottom: 5px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+.others {
+    position: absolute;
+    top: 750px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.others a {
+    font-family: 'Bruno Ace', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.others a:hover {
+    color: #D3AF37;
+}
+
+.others ul {
+    list-style: none;
+}
+
+.others li {
+    margin-bottom: 5px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.main {
+    height: 92.6vh;
+    background-image: url('Assets/BgOficina.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Bruno Ace", sans-serif;
+    color: white;
+}
+
+.conteudo-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b3c54;
+    width: 110vh;
+    height: 85vh;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Bruno Ace', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.tabela-clientes {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 12px;
+}
+
+.tabela-clientes th,
+.tabela-clientes td {
+    padding: 10px;
+}
+
+.tabela-clientes button {
+    font-family: 'Bruno Ace', sans-serif;
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D3AF37;
+    color: white;
+    cursor: pointer;
+}
