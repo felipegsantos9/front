@@ -193,7 +193,11 @@ i {
 }
 
 .main {
+<<<<<<< HEAD
     height: 92.6vh;
+=======
+    height: 93.2vh;
+>>>>>>> c82d907ac293bf8dc2a2b98f6fb7da8c453a1b11
     background-image: url('Assets/Bg Oficina.jpg');
     background-size: cover;
     background-position: center;
@@ -250,5 +254,10 @@ i {
     border-radius: 10px;
     opacity: 100%;
     padding: 20px;
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>> c82d907ac293bf8dc2a2b98f6fb7da8c453a1b11
     gap: 20px;
 }
